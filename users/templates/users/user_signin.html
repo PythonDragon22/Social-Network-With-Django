@@ -1,0 +1,33 @@
+{% load static %}
+<section class="signin-page">
+    <div id="signin-box" class="form-box hidden">
+        <div class="top">
+            <img id="signin-cancel-btn" class="x-icon" src="{% static 'img/cancel.png' %}" alt="Close Icon" draggable="false">
+            <img src="{% static 'img/twitter.png' %}" alt="Twitter Image" draggable="false">
+        </div>
+        <h2>Sign in to Twitter</h2>
+        <div class="social">
+            <a class="btn" href="#"><img class="btn_icon" src="{% static 'img/google.png' %}" alt="Google"> Sign up with Google</a>
+            <a class="btn" href="#"><img class="btn_icon" src="{% static 'img/apple.png' %}" alt="Apple"> Sign up with Apple</a>
+            <p>or</p>
+        </div>
+        <form method="" action="">
+            <div class="inputBox">
+                <input type="email" name="email" placeholder="Email" class="input-field" required>
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password" placeholder="Password" class="input-field" required>
+            </div>
+            <div class="btn-box">
+                <button type="submit" name="button" class="signin-btn">Submit</button>
+            </div>
+        </form>
+        <div class="forgot-pass">
+            <button class="pass-btn" type="submit" name="button">forgot password?</button>
+        </div>
+        <div class="create-one">
+            <h3>Don't have an account?</h3>
+            <a href="#">Signup</a>
+        </div>
+    </div>
+</section>

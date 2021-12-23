@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+            Home Page
+        {% endblock title %}
+    </title>
+    <!-- Normalize CSS File -->
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/twitter.ico' %}"/>
+    <!-- Font Awesome Library -->
+    <script src="https://kit.fontawesome.com/6a630c222c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        {% block content %}
+
+        {% endblock content %}
+
+    <script src="{% static 'js/modals.js' %}"></script>
+
+    </body>
+</html>

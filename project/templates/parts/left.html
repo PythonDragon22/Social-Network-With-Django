@@ -1,0 +1,33 @@
+{% load custom_tags %}
+{% load static %}
+<section class= 'left-aside'>
+    <div class="logo">
+        <a href="#"><img src="{% static 'img/twitter.png' %}" alt="Twitter Nav Logo"></a>
+    </div>
+    <div class="links">
+        <a href="#"><img src="{% static 'img/home.png' %}">Home</a>
+        <a href="#"><img src="{% static 'img/hashtag.png' %}">Explore</a>
+        <a href="#">
+            <img src="{% static 'img/bell.png' %}">
+            {% show_notifications %}
+        </a>
+        <a href="#"><img src="{% static 'img/envelope.png' %}">Messages</a>
+        <a href="#"><img src="{% static 'img/ribbon.png' %}">Bookmarks</a>
+        <a href="#"><img src="{% static 'img/list.png' %}">Lists</a>
+        <a href="#"><img src="{% static 'img/user.png' %}">Profile</a>
+        <a href="#"><img src="{% static 'img/more.png' %}">More</a>
+    </div>
+    <div class="tweet-btn">
+        <a id="tweet-raise-btn" class="primary-xs-btn" href="#">Tweet</a>
+    </div>
+    <div class="user-info">
+        <div class="user-img">
+            <img src="{% static 'img/3.jpg' %}">
+        </div>
+        <div class="user-name">
+            <p>Omar Muhammad Khalaf</p>
+            <span>@OmarMuhammad</span>
+        </div>
+        <span class="more-icon"><img src="{% static 'img/option.png' %}"></span>
+    </div>
+</section>

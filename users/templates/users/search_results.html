@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    User Search Results
+{% endblock title %}
+
+{% block content %}
+{% for user in user_profile %}
+    {% if user.name %}
+        <strong><a href="{% url 'user_profile' user.pk %}">{{user.name}}</a></strong>
+    {% else %}
+        <strong><a href="{% url 'user_profile' user.pk %}">{{user.user.username}}</a></strong>
+    {% endif %}
+{% endfor %}
+{% endblock content %}

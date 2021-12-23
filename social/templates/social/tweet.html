@@ -1,0 +1,25 @@
+{% load static %}
+
+
+<section id="tweet-box" class="tweet-page hidden">
+    <div class="wrapper">
+        <div class="form-box">
+            <span id="tweet-cancel-btn" class="cancel-btn fas fa-times"></span>
+            <div class="user-img">
+                <img src="{% static 'img/add-profile.jfif' %}">
+            </div>
+            <form method="POST" enctype="multipart/form-data">
+                <div class="input-box">
+                    <textarea class="post-input"></textarea>
+                </div>
+                <label for="id_post_image" class="custom-file-upload">
+                    <img src="{% static 'img/add.png' %}">
+                </label>
+                <input type="file" name="avatar" accept="image/*" id="id_post_image" class="upload-post-file">
+                <div class="btn-box">
+                    <button class="tweet-btn" type="submit">Tweet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

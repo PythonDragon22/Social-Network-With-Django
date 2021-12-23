@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+<main class= 'container'>
+    {% include 'parts/left.html' %}
+    {% include 'social/tweet.html' %}
+
+    <section class="main-content">
+        <div class="nav">
+            <a class="text" href="{% url 'home_page' %}">Home</a>
+            <a class="icon" href="#"><img src="{% static 'img/hot-sale.png' %}"></a>
+        </div>
+
+        <div class="post-form">
+            <div class="user-img">
+                {% if user.profile.avatar %}
+                    <img src="{{ user.profile.avatar.url }}">
+                {% else %}
+                    <img src="{% static 'img/add-profile.jfif' %}">
+                {% endif %}
+            </div>
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.body }}
+                <!--<textarea class="post-input" name="" id="" cols="30" rows="10"></textarea>-->
+                <label for="id_post_image" class="custom-file-upload">
+                    <img src="{% static 'img/add.png' %}" alt="">
+                </label>
+                {{ form.post_image }}
+                <!--<input type="file" name="avatar" accept="image/*" id="id_avatar" class="upload-post-file">-->
+                <button class="tweet-btn" type="submit">Tweet</button>
+            </form>
+        </div>
+        <div class="user-tweets">
+            {% for post in post_list %}
+                <a class="post-card" href="#">
+                    <div class="user-img">
+                        {% if post.author.avatar %}
+                            <img src="{{ post.author.avatar.url }}">
+                        {% else %}
+                           <img src="{% static 'img/add-profile.jfif' %}">
+                        {% endif %}
+                    </div>
+                    <div class="user-info">
+                        <p class="full-name">{{ post.author.first_name }} {{ post.author.last_name }}</p>
+                        <p class="username">@{{ post.author.username }}</p>
+                        <p class="created-at">{{ post.created_on }}</p>
+                    </div>
+                    <div class="post-body">
+                        <p>{{ post.body }}</p>
+                    </div>
+                    <div class="post-img">
+                        {% for images in post.post_image.all %}
+                            <img src="{{ post.post_image.url }}">
+                            <!--<img src="{% static 'img/3.jpg' %}" alt="">-->
+                        {% endfor %}
+                    </div>
+                    <div class="icons">
+                        <span class= 'far fa-comment'></span>
+                        <span class= 'fas fa-retweet'></span>
+                        <span class= 'far fa-heart'></span>
+                        <span class= 'far fa-share-square'></span>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </section>
+
+    {% include 'parts/right.html' %}
+</main>
+{% endblock content %}

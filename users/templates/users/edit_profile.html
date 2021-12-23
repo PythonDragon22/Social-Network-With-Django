@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block title %}
+    Edit Profile Page
+{% endblock title %}
+
+{% block content %}
+<section class="edit-profile-page">
+    <div class="form-box">
+        <div class="page-header">
+            <img src="{% static 'img/cancel.png' %}" alt="">
+            <h2>Edit Profile</h2>
+        </div>
+        <form class="" action="" method="">
+            <div class="cover-img-edit">
+                <div class="imgBox">
+                    <img src="{% static 'img/add-profile.jfif' %}" alt="User Image">
+                </div>
+                <div class="fileBox">
+                    <label for="id_user_image" class="custom-file-upload">
+                        <span class="img-icon fas fa-camera"></span>
+                    </label>
+                    <input type="file" name="user_image" accept="image/*" id="id_user_image">
+                </div>
+            </div>
+            <div class="user-img-edit">
+                <div class="imgBox">
+                    <img src="{% static 'img/add-profile.jfif' %}" alt="User Image">
+                </div>
+                <div class="fileBox">
+                    <label for="id_user_image" class="custom-file-upload">
+                        <span class="img-icon fas fa-camera"></span>
+                    </label>
+                    <input type="file" name="user_image" accept="image/*" id="id_user_image">
+                </div>
+            </div>
+            <div class="input-boxes">
+                <div class="input-box">
+                    <input type="text" placeholder="Username" class="input-field">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="First Name" class="input-field">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Last Name" class="input-field">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Location" class="input-field">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Role" class="input-field">
+                </div>
+                <div class="input-box">
+                    <textarea class="bio" name="bio" cols="30" rows="10" placeholder="Add Something About Yourself ..."></textarea>
+                </div>
+            </div>
+            <div class="btn-box">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock content %}

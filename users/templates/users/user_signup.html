@@ -1,0 +1,34 @@
+{% load static %}
+<section class="signin-page">
+    <div id="signup-box" class="form-box hidden">
+
+        <div class="top">
+            <img id="signup-cancel-btn" class="x-icon" src="{% static 'img/cancel.png' %}" alt="Close Icon" draggable="false">
+            <img src="{% static 'img/twitter.png' %}" alt="Twitter Image" draggable="false">
+        </div>
+
+        <form>
+            <div class="inputBox">
+                <input type="text" name="username" placeholder="Username" class="input-field">
+            </div>
+            <div class="inputBox">
+                <input type="email" name="email" placeholder="Email" class="input-field">
+            </div>
+            <div class="inputBox">
+                <input type="text" name="first_name" placeholder="First Name" class="input-field">
+            </div>
+            <div class="inputBox">
+                <input type="text" name="last_name" placeholder="Last Name" class="input-field">
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password" placeholder="Password" class="input-field">
+            </div>
+            <div class="inputBox">
+                <input type="password" name="password_confirmation" placeholder="Password Confirm" class="input-field">
+            </div>
+            <div class="btn-box">
+                <button class="signup-btn" type="submit">Signup</button>
+            </div>
+        </form>
+    </div>
+</section>

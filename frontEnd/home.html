@@ -1,0 +1,46 @@
+<main class= 'container'>
+    <section class="main-content">
+        <div class="nav">
+            <a class="text" href="{% url 'home_page' %}">Home</a>
+            <a class="icon" href="#"><img src="{% static 'img/hot-sale.png' %}" alt=""></a>
+        </div>
+
+        <div class="post-form">
+            <div class="user-img">
+                <img src="{% static 'img/add-profile.jfif' %}" alt="">
+            </div>
+            <form action="" method="">
+                <textarea class="post-input" name="" id="" cols="30" rows="10"></textarea>
+                <label for="id_avatar" class="custom-file-upload">
+                    <img src="{% static 'img/add.png' %}" alt="">
+                </label>
+                <input type="file" name="avatar" accept="image/*" id="id_avatar" class="upload-post-file">
+                <button class="tweet-btn">Tweet</button>
+            </form>
+        </div>
+        <div class="user-tweets">
+            <a class="post-card" href="#">
+                <div class="user-img">
+                    <img src="{% static 'img/3.jpg' %}" alt="">
+                </div>
+                <div class="user-info">
+                    <p class="full-name">John Elder</p>
+                    <p class="username">@johnElder22</p>
+                    <p class="created-at">3h</p>
+                </div>
+                <div class="post-body">
+                    <p>post body here</p>
+                </div>
+                <!-- <div class="post-img">
+                    <img src="{% static 'img/3.jpg' %}" alt="">
+                </div> -->
+                <div class="icons">
+                    <span class= 'far fa-comment'></span>
+                    <span class= 'fas fa-retweet'></span>
+                    <span class= 'far fa-heart'></span>
+                    <span class= 'far fa-share-square'></span>
+                </div>
+            </a>
+        </div>
+    </section>
+</main>

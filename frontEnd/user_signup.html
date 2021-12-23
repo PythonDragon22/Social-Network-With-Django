@@ -1,0 +1,83 @@
+<!-- Create Three Section For Registering Users Data -->
+<section class="signup">
+    <div class="form-box">
+
+        <div class="img-box">
+            <img src="{% static 'img/T.png' %}">
+				</div>
+
+        <form>
+            <fieldset class="section">         <!-- Equals to <div></div> Element -->
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email" class="input-field">
+                </div>
+            	  <div class="input-box">
+            		    <input type="text" name="username" placeholder="Username" class="input-field">
+            	  </div>
+              	<div class="input-box">
+              		  <input type="text" name="first_name" placeholder="First Name" class="input-field">
+              	</div>
+              	<div class="input-box">
+              		  <input type="text" name="last_name" placeholder="Last Name" class="input-field">
+              	</div>
+              	<div class="input-box">
+              		  <input type="text" name="mobile" placeholder="Mobile" class="input-field">
+              	</div>
+            	  <div class="inputBox">
+                    <input type="password" name="password" placeholder="Password" class="input-field">
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="password_confirmation" placeholder="Password Confirm" class="input-field">
+                </div>
+              	<div class="btn-box">
+                    <button type="button">Next</button>
+              	</div>
+            </fieldset>
+
+            <fieldset class="section">         <!-- Equals to <div></div> Element -->
+                <div class="inputBox">
+                    <input type="text" name="birth_date" placeholder="Birth Date" class="input-field">
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="age" placeholder="Age" class="input-field">
+                </div>
+                <div class="select">
+                    <select title="Please select a gender">
+                        <option>Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="location" placeholder="Location" class="input-field">
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="role" placeholder="Role" class="input-field">
+                </div>
+                <div class="btn-box">
+                    <button type="button">Next</button>
+                </div>
+            </fieldset>
+
+            <fieldset class="section">         <!-- Equals to <div></div> Element -->
+                <div class="imgBox">
+                    <img src="{% static 'img/add-profile.jfif' %}" alt="User Image">
+                </div>
+                <div class="fileBox">
+                    <label for="id_user_image" class="custom-file-upload">
+                        <span class="img-icon fas fa-pen"></span>
+                    </label>
+                    <input type="file" name="user_image" accept="image/*" id="id_user_image">
+                </div>
+                <div class="inputBox">
+                    <textarea class="bio" name="bio" cols="30" rows="10" placeholder="Add Something About Yourself ..."></textarea>
+                </div>
+                <div class="btn-box">
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</section>
+

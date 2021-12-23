@@ -1,0 +1,1641 @@
+/*                         Start General Css Rules                            */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*                         End General Css Rules                              */
+/*                         Start Left Side Bar Css Rules                      */
+main.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.left-aside{
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    padding: 0 2rem;
+}
+
+.left-aside .logo a{
+    position: relative;
+    left: 0.5rem;
+    display: inline-block;
+    width: 20%;
+    transition: all 0.4s ease;
+}
+
+.left-aside .logo a img{
+    display: block;
+    width: 100%;
+    transform: scale(0.5);
+}
+
+.left-aside .logo a:hover{
+    background-color: #e2eafc;
+    border-radius: 50%;
+}
+
+.left-aside .links{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-aside .links a{
+    display: inline-block;
+    text-decoration: none;
+    width: 85%;
+    padding: 15px;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    display: flex;
+    transition: all 0.4s ease;
+}
+
+.left-aside .links a img{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.left-aside .links a:hover{
+    background-color: #dee2e6;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.left-aside .tweet-btn{
+    margin: 5px 0 15px 0;
+    padding: 10px 0;
+    background-color: #219ebc;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.left-aside .tweet-btn .primary-xs-btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 20px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.left-aside .user-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.left-aside .user-info:hover{
+    background-color: #ced4da;
+}
+
+.left-aside .user-info .user-img{
+    background-color: #fff;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.left-aside .user-info .user-img img{
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.left-aside .user-info .user-name{
+    margin: 0 5px 0 10px;
+}
+
+.left-aside .user-info .user-name p{
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.left-aside .user-info .user-name span{
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+/*                         End Left Side Bar Css Rules                        */
+/*                         Start User Profile Css Rules                       */
+.user-profile{
+    position: relative;
+    left: 25%;
+    border: 1px solid #ced4da;
+    width: 45%;
+    height: 100%;
+}
+
+.user-profile .nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.user-profile .nav a{
+    display: block;
+    margin-left: 10px;
+    border-radius: 50%;
+    margin-right: 35px;
+    transition: all 0.4s ease;
+    padding: 10px;
+}
+
+.user-profile .nav a img{
+    display: block;
+    text-decoration: none;
+}
+
+.user-profile .nav a:hover{
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #ced4da;
+}
+
+.user-profile .nav .user p{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.user-profile .nav .user span{
+    color: #536471;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.user-profile .cover-img{
+    width: 100%;
+    margin: 0 auto;
+    height: 200px;
+    object-fit: contain;
+}
+
+.user-profile .cover-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.user-profile .card{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.user-profile .card .user-img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: -4rem;
+    left: 1rem;
+}
+
+.user-profile .card .user-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    border: 5px solid #f8f9fa;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.user-profile .card .edit-profile-btn{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.user-profile .card .edit-profile-btn .light-sm-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #ced4da;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.user-profile .card .edit-profile-btn .light-sm-btn:hover{
+    background-color: #e9ecef;
+}
+
+.user-profile .card .user-data{
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+
+.user-profile .card .user-data .user-name p{
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.user-profile .card .user-data .user-name span{
+    color: #536471;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.user-profile .card .user-data .user-bio p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    width: 50%;
+}
+
+.user-profile .card .user-data .date-joined{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.user-profile .card .user-data .date-joined .calendar{
+    display: inline-block;
+    color: #536471;
+    margin-right: 10px;
+}
+
+.user-profile .card .user-data .date-joined .date{
+    color: #536471;
+}
+
+.user-profile .card .user-data .follow{
+    display: flex;
+}
+
+.user-profile .card .user-data .follow .following,
+.user-profile .card .user-data .follow .followers
+{
+    display: inline-block;
+    text-decoration: none;
+    display: flex;
+    color: #536471;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.user-profile .card .user-data .follow .following .count,
+.user-profile .card .user-data .follow .followers .count{
+    display: inline-block;
+    margin-right: 10px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.user-profile .card .user-data .follow .following{
+    margin-right: 25px;
+}
+
+.user-profile .tabs{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    max-width: 100%;
+    border-bottom: 1px solid #ced4da;
+}
+
+.user-profile .tabs span{
+    position: relative;
+    display: inline-block;
+    padding: 15px 35px;
+    color: #536471;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+}
+
+.user-profile .tabs span:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.post-card{
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 5rem;
+    transition: all 0.4s ease;
+}
+
+.post-card:hover{
+    background-color: #e9ecef;
+}
+
+.post-card .user-img{
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.post-card .user-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.post-card .user-info{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.post-card .user-info .full-name{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+.post-card .user-info .username{
+    margin: 0 15px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: #333;
+}
+
+.post-card .user-info .created-at{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #000;
+}
+
+.post-card .post-body p{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #000;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.post-card .post-img{
+    width: 500px;
+    height: 250px;
+    margin-top: 25px;
+}
+
+.post-card .post-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.post-card .icons{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-card .icons span{
+    display: inline-block;
+    color: #536471;
+    font-size: 1.2rem;
+}
+/*                         End User Profile Css Rules                         */
+/*                         Start Right Side Bar Css Rules                     */
+.right-aside{
+    position: relative;
+    left: 25%;
+    width: 30%;
+    height: 100%;
+    padding-right: 50px;
+    padding-left: 30px;
+}
+
+.right-aside .search-form{
+    position: relative;
+    padding: 5px 0 15px 0;
+}
+
+.right-aside .search-form form .search-input{
+    position: relative;
+    padding: 10px 50px 10px 50px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    width: 100%;
+    background-color: #eff3f4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #536471;
+}
+
+.right-aside .search-form form .search-btn{
+    display: block;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.right-aside .search-form form .cancel-btn{
+    display: block;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.right-aside .search-form form .search-btn .search-icon{
+    color: #333;
+    font-size: 18px;
+}
+
+.right-aside .search-form form .cancel-btn .cancel-icon{
+    color: #fff;
+    font-size: 14px;
+    background-color: #219ebc;
+    padding: 3px 5px;
+    border-radius: 100%;
+}
+
+.right-aside .latest-news{
+    width: 100%;
+    background-color: #eff3f4;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.right-aside .latest-news .latest-news-heading{
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.right-aside .latest-news .post .post-content{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.right-aside .latest-news .post .post-content .post-img{
+    width: 65px;
+    height: 65px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.right-aside .latest-news .post .post-content .post-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.right-aside .latest-news .post .post-content .title .post-title{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.right-aside .follow{
+    width: 100%;
+    background-color: #eff3f4;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.right-aside .follow .follow-heading{
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.right-aside .follow .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.right-aside .follow .user-info{
+    position: relative;
+    display: flex;
+}
+
+.right-aside .follow .user-info .user-img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.right-aside .follow .user-info .user-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.right-aside .follow .user-info .name .full-name{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+.right-aside .follow .user-info .name .username{
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #000;
+}
+
+.right-aside .follow .follow-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 6px 15px;
+    border-radius: 50px;
+}
+
+/*                         End Right Side Bar Css Rules                       */
+/*                         Start Home Page CSS Rules                          */
+.main-content{
+    position: relative;
+    left: 25%;
+    border: 1px solid #ced4da;
+    width: 45%;
+    height: 100%;
+}
+
+.main-content .nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #cfdbd5;
+}
+
+.main-content .nav .text{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.main-content .post-form{
+    position: relative;
+    margin-bottom: 5px;
+    border-left: 1px solid #cfdbd5;
+}
+
+.main-content .post-form .user-img{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.main-content .post-form .user-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.main-content .post-form form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .post-form form .post-input{
+    max-width: 100%;
+    padding-top: 1.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfdbd5;
+    border-right: 1px solid #cfdbd5;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    height: 150px;
+}
+
+.main-content .post-form form .upload-post-file{
+    display: none;
+}
+
+.main-content .post-form form .custom-file-upload{
+    z-index: 1;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.main-content .post-form form .tweet-btn{
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #1DA1F2;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.main-content .post-card{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #cfdbd5;
+    margin-bottom: 5px;
+    transition: all 0.4s ease;
+}
+
+.main-content .post-card:hover{
+    background-color: #e9ecef;
+}
+
+.main-content .post-card .post-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem 1rem 5rem;
+}
+
+.main-content .post-card .post-content .user-img{
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.main-content .post-card .post-content .user-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.main-content .post-card .post-content .user-info{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.main-content .post-card .post-content .user-info .full-name{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+.main-content .post-card .post-content .user-info .username{
+    margin: 0 15px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: #333;
+}
+
+.main-content .post-card .post-content .user-info .created-at{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #000;
+}
+
+.main-content .post-card .post-content .post-body p{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #000;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.main-content .post-card .post-content .post-img{
+    width: 380px;
+    height: 250px;
+    margin-top: 25px;
+}
+
+.main-content .post-card .post-content .post-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+/*                      End Home Page CSS Rules                               */
+/*                      Start Registration Page Css Rules                     */
+.registration-page .wrapper{
+    position: relative;
+    background-color: #fff;
+}
+
+.registration-page .wrapper .content{
+    position: relative;
+    display: flex;
+}
+
+.registration-page .wrapper .content .left{
+    position: relative;
+    width: 50%;
+}
+
+.registration-page .wrapper .content .left img{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.registration-page .wrapper .content .right{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.registration-page .wrapper .content .right .img{
+    height: 90px;
+}
+
+.registration-page .wrapper .content .right h1{
+    font-size: 4.5rem;
+    font-weight: bolder;
+    margin-bottom: 35px;
+}
+
+.registration-page .wrapper .content .right h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Lobster Two', cursive;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+}
+
+.registration-page .wrapper .content .right .signupBox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-page .wrapper .content .right .signupBox .btn_1{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ced4da;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 20px;
+    max-width: 50%;
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 30px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;
+}
+
+.registration-page .wrapper .content .right .signupBox .btn_1:hover{
+    background-color: #e9ecef;
+}
+
+.registration-page .wrapper .content .right .signupBox .btn_1 .btn_icon{
+    display: block;
+    transform: scale(0.4);
+}
+
+.registration-page .wrapper .content .right .signupBox .btn_2{
+    border: 1px solid #ced4da;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(29, 155, 240);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 50%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.registration-page .wrapper .content .right .signupBox .btn_2:hover{
+    background-color: #5e7ce2;
+    color: #fff;
+}
+
+.registration-page .wrapper .content .right .signin{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.registration-page .wrapper .content .right .signin h3{
+    margin-bottom: 25px;
+}
+
+.registration-page .wrapper .content .right .signin .btn_3{
+    border: 1px solid #ced4da;
+    text-decoration: none;
+    color: rgb(29, 155, 240);
+    text-align: center;
+    font-weight: bolder;
+    max-width: 50%;
+    height: 50px;
+    margin-bottom: 30px;
+    line-height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;
+}
+
+.registration-page .wrapper .content .right .signin .btn_3:hover{
+    background-color: #caf0f8;
+    color: rgb(29, 155, 240);
+}
+
+.or{
+    position: relative;
+    padding-left: 10rem;
+}
+
+.or::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 1px;
+    width: 24%;
+    background-color: #9da89d;
+}
+
+.or::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 48%;
+    height: 1px;
+    width: 24%;
+    background-color: #9da89d;
+}
+/*                    End Registration Page Css Rules                         */
+/*                    Start Signup Page Css Rules                             */
+
+.signup .form-box .img-box{
+	position: fixed;
+	top: 20%;
+	right: 50%;
+	z-index: 2;
+}
+
+.signup .form-box form .section{
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	width: 500px;
+  	height: 400px;
+  	overflow-y: scroll;
+  	background-color: #fff;
+  	/*z-index: 1;*/
+  	padding: 5rem 2rem 2rem 2rem;
+  	border-radius: 10px 0 0 10px;
+  	outline: none;
+  	border: none;
+}
+
+.signup .form-box form .section .inputBox .input-field{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #46494c;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ced4da;
+}
+
+.signup .form-box form .section .inputBox .bio{
+    display: inline-block;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 25px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius:10px;
+    padding:10px;
+    height: 200px;
+    font-size: 18px;
+    color: #46494c;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    resize: none;      /* prevent resizing the textarea and also removes the resizer icon in the bottom right side */
+    transition: border-color 0.3s ease-in-out;
+}
+
+.signup .form-box form .section .inputBox .bio:hover{
+    border: 1px solid #aaa;
+}
+
+.signup .form-box form .section input[type="file"]{
+	display: none;
+}
+
+.signup .form-box form .section select{
+	display: inline-block;
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #46494c;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ced4da;
+}
+
+.signup .form-box form .section .imgBox{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 35%;
+}
+
+.signup .form-box form .section .imgBox img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.signup .form-box form .section .fileBox label{
+    position: relative;
+    display: inline-block;
+    top: -15px;
+    right: -45%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.signup .form-box form .section .fileBox label .img-icon{
+    color: #fff;
+    background-color: #0077b6;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 8px;
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+.signup .form-box form .section .btn-box button{
+    outline: none;
+    border: 1px solid #ced4da;
+    color: #fff;
+    text-align: center;
+    font-weight: bolder;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;
+    background-color: transparent;
+    background-color: rgb(29, 155, 240)!important;
+    cursor: pointer;
+}
+/*                    End Signup Page Css Rules                               */
+/*                    Start Signin Page Css Rules                             */
+.signin-page .form-box.hidden{
+    display: none;
+}
+
+.signin-page .form-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: #fff;
+    padding: 5rem 2rem 2rem 2rem;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    border: none;
+}
+
+.signin-page .form-box .top{
+    position: relative;
+}
+
+.signin-page .form-box .top img{
+    transform: scale(0.7);
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 45%;
+}
+
+.signin-page .form-box .top .x-icon{
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+  display: block;
+}
+
+.signin-page .form-box h2{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Lobster Two', cursive;
+}
+
+.signin-page .form-box .social{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signin-page .form-box .social .btn{
+  display: flex;
+  border: 1px solid #ced4da;
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 20px;
+  width: 80%;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 30px;
+  padding-left: 45px;
+  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
+}
+
+.signin-page .form-box .social .btn .btn_icon{
+  display: block;
+  transform: scale(0.4);
+}
+
+.signin-page .form-box form .inputBox input{
+  display: inline-block;
+  width: 100%;
+  padding: 20px 10px;
+  margin: 15px 0;
+  font-size: 16px;
+  color: #46494c;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ced4da;
+}
+
+.signin-page .form-box form .form-btn{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signin-page .form-box form .btn-box .signin-btn{
+  border: 1px solid #ced4da;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  margin-bottom: 20px;
+  width: 85%;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 30px;
+  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.signin-page .form-box form .btn-box .signup-btn{
+    outline: none;
+    border: 1px solid #ced4da;
+    color: #fff;
+    text-align: center;
+    font-weight: bolder;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;
+    background-color: transparent;
+    background-color: rgb(29, 155, 240)!important;
+    cursor: pointer;
+}
+
+.signin-page .form-box .forgot-pass{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signin-page .form-box .forgot-pass .pass-btn{
+  border: 1px solid #ced4da;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  margin-bottom: 20px;
+  width: 70%;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 30px;
+  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.signin-page .form-box .create-one{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.signin-page .form-box .create-one a{
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.signin-page .form-box .forgot-pass{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signin-page .form-box .forgot-pass .pass-btn{
+  border: 1px solid #ced4da;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  margin-bottom: 20px;
+  width: 70%;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 30px;
+  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.signin-page .form-box .create-one{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.signin-page .form-box .create-one a{
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 5px;
+}
+/*                       End Signin Page Css Rules                            */
+/*                       Start Logout Page Css Rules                          */
+.overlay{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logout{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 350px;
+    padding: 25px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.logout .img{
+    text-align: center;
+}
+
+.logout h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.logout p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.logout .logout-btn{
+    text-decoration: none;
+    border: 1px solid #ced4da;
+    color: #fff;
+    text-align: center;
+    font-weight: bolder;
+    width: 100%;
+    height: 45px;
+    margin: 15px 0;
+    line-height: 45px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;
+    background-color: #0b090a;
+    cursor: pointer;
+}
+
+.logout .cancel-btn{
+    text-decoration: none;
+    border: 1px solid #ced4da;
+    color: #000;
+    text-align: center;
+    font-weight: bolder;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 30px;
+    line-height: 45px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.logout .cancel-btn:hover{
+    background-color: #ced4da;
+}
+/*                       End Logout Page Css Rules                            */
+/*                   Start Edit Profile Page Css Rules                        */
+.edit-profile-page{
+    position: relative;
+  	width: 100%;
+  	height: 100vh;
+  	background-color: lightblue;
+}
+
+.edit-profile-page .form-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 90%;
+    overflow-y: scroll;
+    background-color: #fff;
+    z-index: 1;
+    outline: none;
+    border: none;
+}
+
+.edit-profile-page .form-box .page-header{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 10px;
+    border: 2px solid red;
+}
+
+.edit-profile-page .form-box .page-header h2{
+    margin-left: 4.5rem;
+}
+
+.edit-profile-page .form-box form .cover-img-edit{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    padding: 0 3px;
+}
+
+.edit-profile-page .form-box form .cover-img-edit .imgBox,
+.edit-profile-page .form-box form .cover-img-edit .imgBox img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.edit-profile-page .form-box form .cover-img-edit .fileBox label{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.edit-profile-page .form-box form .user-img-edit .imgBox{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 8.5rem;
+    left: 0.3rem;
+}
+
+.edit-profile-page .form-box form .user-img-edit .imgBox img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    border: 5px solid #f8f9fa;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.edit-profile-page .form-box form .user-img-edit .fileBox label{
+    position: absolute;
+    top: 32%;
+    left: 10%;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.edit-profile-page .form-box form .input-boxes{
+    position: relative;
+    margin-top: 5.5rem;
+    padding: 0 10px;
+}
+
+.edit-profile-page .form-box form .input-boxes .input-box .input-field{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #46494c;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+}
+
+.edit-profile-page .form-box form .input-boxes .input-box .bio{
+    display: inline-block;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 25px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 120px;
+    font-size: 18px;
+    color: #46494c;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    resize: none;      /* prevent resizing the textarea and also removes the resizer icon in the bottom right side */
+    transition: border-color 0.3s ease-in-out;
+}
+
+.edit-profile-page .form-box form .input-boxes .input-box .bio:hover{
+    border: 1px solid #aaa;
+}
+
+.edit-profile-page .form-box form .btn-box{
+    padding: 0 10px 25px 10px;
+}
+
+.edit-profile-page .form-box form .btn-box button{
+    outline: none;
+    border: 1px solid #ced4da;
+    color: #fff;
+    text-align: center;
+    font-weight: bolder;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;
+    background-color: transparent;
+    background-color: rgb(29, 155, 240)!important;
+    cursor: pointer;
+}
+/*                   End Edit Profile Page Css Rules                          */
+/*                   Start Tweet Page Css Rules                               */
+.tweet-page{
+    position: relative;
+}
+
+.tweet-page.hidden{
+display: none;
+}
+
+.tweet-page .wrapper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.tweet-page .wrapper .form-box{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 40vh;
+    padding: 3rem 1rem 2.5rem 5rem;
+    border-radius: 15px;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.tweet-page .wrapper .form-box .cancel-btn{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 16px;
+    padding: 4px 6px;
+    cursor: pointer;
+}
+
+.tweet-page .wrapper .form-box .cancel-btn:hover{
+    background-color: #ccc;
+    padding: 4px 6px;
+    border-radius: 50%;
+}
+
+.tweet-page .wrapper .form-box .user-img{
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.tweet-page .wrapper .form-box .user-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tweet-page .wrapper .form-box form .input-box{
+    position: relative;
+    max-width: 100%;
+    height: 170px;
+}
+
+.tweet-page .wrapper .form-box form .input-box .post-input{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    resize: none;
+    padding-top: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.tweet-page .wrapper .form-box form .upload-post-file{
+    display: none;
+}
+
+.tweet-page .wrapper .form-box form .custom-file-upload{
+    z-index: 1;
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.tweet-page .wrapper .form-box form .btn-box .tweet-btn{
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #1DA1F2;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+/*                   End Tweet Page Css Rules                                 */

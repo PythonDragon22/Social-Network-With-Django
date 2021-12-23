@@ -1,0 +1,82 @@
+{% load static %}
+<section class="right-aside">
+    <div class="search-form">
+        <form action="{% url 'search_results' %}" method="GET">
+            <input type="text" name="q" class="search-input" placeholder="Search Twitter">
+            <button type="submit" class="search-btn"><i class="search-icon fas fa-search"></i></button>
+            <button type="submit" class="cancel-btn"><i class="cancel-icon fas fa-times"></i></button>
+        </form>
+    </div>
+    <div class="latest-news">
+        <h1 class="latest-news-heading">What's happening</h1>
+        <div class="post">
+            <a href="#" class="post-content">
+                <div class="post-img">
+                <img src="{% static 'img/3.jpg' %}" alt="">
+                </div>
+                <div class="title">
+                <p class="post-title">This is a post title ...</p>
+                </div>
+            </a>
+
+            <a href="#" class="post-content">
+                <div class="post-img">
+                <img src="{% static 'img/3.jpg' %}" alt="">
+                </div>
+                <div class="title">
+                <p class="post-title">This is a post title ...</p>
+                </div>
+            </a>
+
+            <a href="#" class="post-content">
+                <div class="post-img">
+                <img src="{% static 'img/3.jpg' %}" alt="">
+                </div>
+                <div class="title">
+                <p class="post-title">This is a post title ...</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="follow">
+        <h1 class="follow-heading">Who to follow</h1>
+        <div class="container">
+            <div class="user-info">
+                <div class="user-img">
+                    <img src="{% static 'img/3.jpg' %}" alt="">
+                </div>
+                <div class="name">
+                    <p class="full-name">Omar Muhammed Khalaf</p>
+                    <p class="username">@OmarMuhammed</p>
+                </div>
+            </div>
+            <a href="#" class="follow-btn">Follow</a>
+        </div>
+
+        <div class="container">
+            <div class="user-info">
+                <div class="user-img">
+                    <img src="{% static 'img/3.jpg' %}" alt="">
+                </div>
+                <div class="name">
+                    <p class="full-name">Omar Muhammed Khalaf</p>
+                    <p class="username">@OmarMuhammed</p>
+                </div>
+            </div>
+            <a href="#" class="follow-btn">Follow</a>
+        </div>
+
+        <div class="container">
+            <div class="user-info">
+                <div class="user-img">
+                    <img src="{% static 'img/3.jpg' %}" alt="">
+                </div>
+                <div class="name">
+                    <p class="full-name">Omar Muhammed Khalaf</p>
+                    <p class="username">@OmarMuhammed</p>
+                </div>
+            </div>
+            <a href="#" class="follow-btn">Follow</a>
+        </div>
+    </div>
+</section>
